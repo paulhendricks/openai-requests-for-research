@@ -1,4 +1,4 @@
-# OpenAI Requests for Research: Cartpole
+# OpenAI Requests for Research: Cartpole: for newcomers to RL
 
 ## Getting started
 
