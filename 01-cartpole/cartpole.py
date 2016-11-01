@@ -12,4 +12,4 @@ result = run_experiment(env, agent, episode_count=10000, watch=False)
 
 # Run hill climbing agent
 agent = HillClimbingAgent(env.observation_space, env.action_space)
-result = run_experiment(env, agent, episode_count=2000)
+result = run_experiment(env, agent, episode_count=5000, watch=False)
