@@ -24,5 +24,8 @@ policy_grad = agent.policy_gradient()
 value_grad = agent.value_gradient()
 sess = tf.InteractiveSession()
 sess.run(tf.initialize_all_variables())
+outdir = '/tmp/' + agent.name + '-results'
+env.monitor.start(outdir, force=True, video_callable=lambda count: count % 50 == 0)
 for _ in range(2000):
     reward = agent.run_episode(env, policy_grad, value_grad, sess)
+env.monitor.close()
